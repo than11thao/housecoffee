@@ -1,0 +1,35 @@
+/* Mobi and tablet */
+@media (max-width: 1023px){
+    .hide-on-mobie-tablet{
+        display: none;
+    }
+    .product__public-list{
+        flex-wrap: wrap;
+    }
+    .product__rate-apps{
+        margin-bottom: 100px;
+    }
+    .product__rate-local{
+        position: relative;
+        top: -56px;
+    }
+    .product__rate-img{
+        position: relative;
+        top: 335px;
+    }
+    .product__rate-comment {
+        position: relative;
+        top: -95px;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width: 1023px){
+
+}
+
+/* Mobile */
+@media (max-width: 739px){
+
+}

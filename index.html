@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee House</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/grid.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="icon" href="https://theme.hstatic.net/1000075078/1000610097/14/favicon.png?v=662">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide ">
+                <div class="header__select">
+                    <div class="header__title hide-on-mobie-tablet">
+                        <img src="https://order.thecoffeehouse.com/_nuxt/img/logo.174bdfd.svg" alt=""
+                            class="header__title-main">
+                    </div>
+                    <div class="header__logo js-header-logo">
+                        <img src="	https://minio.thecoffeehouse.com/images/tch-web-order/Delivery2.png" alt=""
+                            class="header__logo-ship">
+                        <div class="header__logo-notify">
+                            <h3 class="header__logo-active">Giao hàng</h3>
+                            <h4 class="header__logo-address">Tại: Nhập đại chỉ giao hàng </h4>
+                        </div>
+                        <div class="header__logo-icon">
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="header__navbar hide-on-mobie-tablet">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">Đặt hàng</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">Tin tức</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">Cửa hàng</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">Khuyến mãi</a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">Tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__img">
+                        <div class="header__img-user">
+                            <div class="header__img-form">
+                                <div class="header__img-form-icon">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                                <ul class="header__img-list">
+                                    <li class="header__img-search">
+                                        <img src="	https://order.thecoffeehouse.com/icon/history-order.svg" alt=""
+                                            class="header__img-search-load">
+                                        <h4 class="header__img-search-text">Tra cứu đơn hàng</h4>
+                                    </li>
+                                    <li class="header__img-search">
+                                        <img
+                                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIgMTNINFYxOEgxNlYySDRWN0gyVjFDMiAwLjczNDc4NCAyLjEwNTM2IDAuNDgwNDMgMi4yOTI4OSAwLjI5Mjg5M0MyLjQ4MDQzIDAuMTA1MzU3IDIuNzM0NzggMCAzIDBIMTdDMTcuMjY1MiAwIDE3LjUxOTYgMC4xMDUzNTcgMTcuNzA3MSAwLjI5Mjg5M0MxNy44OTQ2IDAuNDgwNDMgMTggMC43MzQ3ODQgMTggMVYxOUMxOCAxOS4yNjUyIDE3Ljg5NDYgMTkuNTE5NiAxNy43MDcxIDE5LjcwNzFDMTcuNTE5NiAxOS44OTQ2IDE3LjI2NTIgMjAgMTcgMjBIM0MyLjczNDc4IDIwIDIuNDgwNDMgMTkuODk0NiAyLjI5Mjg5IDE5LjcwNzFDMi4xMDUzNiAxOS41MTk2IDIgMTkuMjY1MiAyIDE5VjEzWk04IDlWNkwxMyAxMEw4IDE0VjExSDBWOUg4WiIgZmlsbD0iI0M0QzRDNCIvPgo8L3N2Zz4K">
+                                        <h4 class="header__img-search-text">Đơn nhập</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <img src="https://order.thecoffeehouse.com/_nuxt/img/Carticon.373916c.png" alt=""
+                            class="header__img-bag">
+                    </div>
+                </div>
+            </div>
+            <div class="header__notify js-header-notify">
+                <div class="header__notify-form">
+                    <div class="header__notify-sub ">
+                        <div class="header__notify-sub-heading">
+                            <div class="header__notify-form-content">
+                                <img src="https://minio.thecoffeehouse.com/images/tch-web-order/Delivery2.png" alt=""
+                                    class="header__notify-form-img">
+                                <h3 class="header__notify-form-heading">Giao hàng</h3>
+                            </div>
+                        </div>
+                        <div class="header__notify-sub-input">
+                            <input type="text" class="header__notify-form-input" placeholder="Vui lòng nhập địa chỉ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <!-- Slider -->
+            <div class="slider">
+                <div class="grid wide">
+                    <div class="slider__img"></div>
+                </div>
+            </div>
+            <!-- Product -->
+            <div class="product">
+                <div class="product__title">
+                    <div class="product__title-icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <span class="product__title-main">Sản phẩm từ Nhà</span>
+                </div>
+                <div class="product__public">
+                    <ul class="product__public-list">
+                        <li class="product__public-item">
+                            <a href="" class="product__public-link">
+                                <img src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/ca-phe.png
+                                    " alt="" class="product__public-img">
+                                <span class="product__public-type">Cà phê</span>
+                            </a>
+                        </li>
+                        <li class="product__public-item">
+                            <a href="" class="product__public-link">
+                                <img src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/cloudfee.png
+                                    " alt="" class="product__public-img">
+                                <span class="product__public-type">CloudFee</span>
+                            </a>
+                        </li>
+                        <li class="product__public-item">
+                            <a href="" class="product__public-link">
+                                <img src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/tra-trai-cay-tra-sua.png
+                                    " alt="" class="product__public-img">
+                                <span class="product__public-type">Trà Trái Cây - Trà Sữa</span>
+                            </a>
+                        </li>
+                        <li class="product__public-item">
+                            <a href="" class="product__public-link">
+                                <img src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/hi-tea.png
+                                    " alt="" class="product__public-img">
+                                <span class="product__public-type">Hi-Tea Healthy</span>
+                            </a>
+                        </li>
+                        <li class="product__public-item">
+                            <a href="" class="product__public-link">
+                                <img src="https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/da-xa.png
+                                    " alt="" class="product__public-img">
+                                <span class="product__public-type">Đá Xay- Choco-Matcha</span>
+                            </a>
+                        </li>
+                        <li class="product__public-item">
+                            <a href="" class="product__public-link">
+                                <img src="https://bonjourcoffee.vn/blog/wp-content/uploads/2020/02/cach-rang-ca-phe.jpeg
+                                    " alt="" class="product__public-img">
+                                <span class="product__public-type">Thưởng thức tại nhà</span>
+                            </a>
+                        </li>
+                        <li class="product__public-item">
+                            <a href="" class="product__public-link">
+                                <img src="	https://minio.thecoffeehouse.com/image/tch-web-order/category-thumbnails/banh-snack.png
+                                    " alt="" class="product__public-img">
+                                <span class="product__public-type">Bánh Snack</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product__many">
+                    <div class="grid wide">
+                        <div class="row ">
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="https://minio.thecoffeehouse.com/image/admin/1639377738_ca-phe-sua-da_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Cà Phê Sữa Đá</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">29.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="https://minio.thecoffeehouse.com/image/admin/1639377770_cfsua-nong_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Cà Phê Sữa Nóng</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">35.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="	https://minio.thecoffeehouse.com/image/admin/1639377904_bac-siu_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Bạc Sỉu</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">29.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="https://minio.thecoffeehouse.com/image/admin/1639377926_bacsiunong_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Bạc Sỉu Nóng</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">35.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="	https://minio.thecoffeehouse.com/image/admin/1639377798_ca-phe-den-da_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Cà Phê Đen Đá</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">29.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="	https://minio.thecoffeehouse.com/image/admin/1639377816_ca-phe-den-nong_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Cà Phê Đen Nóng</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">35.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="https://minio.thecoffeehouse.com/image/admin/BottleCFSD_496652_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Cà Phê Sữa Đá Chai </h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">75.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="	https://minio.thecoffeehouse.com/image/admin/caramel-macchiato_143623_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Caramel Macchiato Đá</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">49.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="https://minio.thecoffeehouse.com/image/admin/caramelmacchiatonong_168039_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Caramel Macchiato Nóng</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">49.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="	https://minio.thecoffeehouse.com/image/admin/latte-da_438410_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Latte Đá</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">49.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="	https://minio.thecoffeehouse.com/image/admin/latte_851143_400x400.jpg
+                                    " alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Latte Nóng</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">49.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="https://minio.thecoffeehouse.com/image/admin/classic-cold-brew_791256_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Americano Đá</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">39.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="https://minio.thecoffeehouse.com/image/admin/1636647328_arme-nong_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Americano Nóng</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">39.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="https://minio.thecoffeehouse.com/image/admin/Capu-da_487470_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Cappuccino Đá</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">49.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="https://minio.thecoffeehouse.com/image/admin/cappuccino_621532_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Cappuccino Nóng</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">49.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="	https://minio.thecoffeehouse.com/image/admin/cfdenda-espressoDa_185438_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Espresso Đá</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">45.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="	https://minio.thecoffeehouse.com/image/admin/espressoNong_612688_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Espresso Nóng</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">39.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col l-2 m-6 c-12 product__many-sub">
+                                <a href="" class="product__many-item">
+                                    <img src="https://minio.thecoffeehouse.com/image/admin/classic-cold-brew_239501_400x400.jpg"
+                                        alt="" class="product__many-img">
+                                    <h3 class="product__many-heading">Cold Brew Truyền Thống</h3>
+                                    <div class="product__many-main">
+                                        <div class="product__many-price">45.000đ </div>
+                                        <div class="product__many-plus">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__news">
+                    <div class="grid wide">
+                        <div class="product__news-head">
+                            <div class="product__news-icon">
+                                <i class="fa-solid fa-newspaper"></i>
+                            </div>
+                            <div class="product__news-heading">Tin Tức</div>
+                        </div>
+                        <div class="product__news-main">
+                            <div class="row ">
+                                <div class="col l-3  m-6 c-12m-6 c-12">
+                                    <div class="product__news-space">
+                                        <img src="https://feed.thecoffeehouse.com//content/images/2022/06/News--2-.jpg"
+                                            alt="" class="product__news-img">
+                                        <div class="product__news-pre">
+                                            <span class="product__news-dis">HÀNH TRÌNH MỚI NHÀ 178 HẬU GIANG - QUẬN
+                                                06</span>
+                                            <div class="product__news-button">
+                                                <a href="" class="product__news-read">ĐỌC TIẾP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product__news-space">
+                                        <img src="https://feed.thecoffeehouse.com//content/images/2022/05/FB--3--1.jpg"
+                                            alt="" class="product__news-img">
+                                        <div class="product__news-pre">
+                                            <span class="product__news-dis">CHỈ CÒN 3 NGÀY ĐỔI BEAN NGAY</span>
+                                            <div class="product__news-button">
+                                                <a href="" class="product__news-read">ĐỌC TIẾP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product__news-space">
+                                        <img src="https://feed.thecoffeehouse.com//content/images/2022/06/APP-NEWS--1-.jpg"
+                                            alt="" class="product__news-img">
+                                        <div class="product__news-pre">
+                                            <span class="product__news-dis">CHILL MÓN NƯỚC NHÀ - SHOPPEEPAY TẶNG ĐẾN
+                                                50K</span>
+                                            <div class="product__news-button">
+                                                <a href="" class="product__news-read">ĐỌC TIẾP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product__news-space">
+                                        <img src="https://feed.thecoffeehouse.com//content/images/2022/06/NEWS--3-.jpg"
+                                            alt="" class="product__news-img">
+                                        <div class="product__news-pre">
+                                            <span class="product__news-dis">HI - TEA HEALTHY: VÌ YÊU BEAUTY</span>
+                                            <div class="product__news-button">
+                                                <a href="" class="product__news-read">ĐỌC TIẾP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product__news-space">
+                                        <img src="https://feed.thecoffeehouse.com//content/images/2022/06/app-news--11-.jpg"
+                                            alt="" class="product__news-img">
+                                        <div class="product__news-pre">
+                                            <span class="product__news-dis">ĐI LÀM VUI - KHUI QUÀ TỪ 30% TỪ NHÀ</span>
+                                            <div class="product__news-button">
+                                                <a href="" class="product__news-read">ĐỌC TIẾP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product__news-space">
+                                        <img src="https://feed.thecoffeehouse.com//content/images/2022/06/FB-TCH.png"
+                                            alt="" class="product__news-img">
+                                        <div class="product__news-pre">
+                                            <span class="product__news-dis">VỀ "NHÀ" CÙNG ZALOPAY - TẬN HƯỞNG NGAY ƯU
+                                                ĐÃI</span>
+                                            <div class="product__news-button">
+                                                <a href="" class="product__news-read">ĐỌC TIẾP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product__news-space">
+                                        <img src="https://feed.thecoffeehouse.com//content/images/2022/06/app-news--1--1.jpg"
+                                            alt="" class="product__news-img">
+                                        <div class="product__news-pre">
+                                            <span class="product__news-dis">HẠNH PHÚC MỖI NGÀY - CHỐT ĐƠN MỎI TAY</span>
+                                            <div class="product__news-button">
+                                                <a href="" class="product__news-read">ĐỌC TIẾP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-12">
+                                    <div class="product__news-space">
+                                        <img src="https://feed.thecoffeehouse.com//content/images/2022/06/app-news--2-.jpg"
+                                            alt="" class="product__news-img">
+                                        <div class="product__news-pre">
+                                            <span class="product__news-dis">THẾ HỆ CÀ PHÊ MỚI - nHÀ MỜI DEAL TO</span>
+                                            <div class="product__news-button">
+                                                <a href="" class="product__news-read">ĐỌC TIẾP</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product__rate">
+                    <div class="grid wide">
+                        <div class="product__rate-content">
+                            <div class="row ">
+                                <div class="col l-6 ">
+                                    <div class="product__rate-apps">
+                                        <div class="product__rate-local">
+                                            <img src="	https://order.thecoffeehouse.com/_nuxt/img/squarelogo.035676b.png"
+                                                alt="" class="product__rate-apps-title">
+                                            <h3 class="product__rate-apps-heading">Đặt qua app THE COFFEE HOUSE để tích
+                                                điểm và hưởng quyền lợi thành viên</h3>
+                                        </div>
+                                        <div class="product__rate-img">
+                                            <img src="	https://order.thecoffeehouse.com/_nuxt/img/app-store-2.a04cf2b.png"
+                                                alt="" class="product__rate-img-appStore">
+                                            <img src="	https://order.thecoffeehouse.com/_nuxt/img/google-play-2.9945b62.png"
+                                                alt="" class="product__rate-img-googlePlay">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-6">
+                                    <img src="https://order.thecoffeehouse.com/_nuxt/img/newappv6.f2e1281.png" alt=""
+                                        class="product__rate-comment">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__more">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="product__more-general">
+                                <div class="col l-2 m-4 c-3">
+                                    <img src="https://media1.thehungryjpeg.com/thumbs2/ori_3674047_tc54gdd3x6gk34m2c70s5ulai2sozc71s3glt9sj_coffee-house-logo-template-vector-for-premium-coffee-business.jpeg"
+                                        alt="" class="product__more-plus-img">
+                                </div>
+                                <div class="col l-10 m-8 c-9">
+                                    <div class="home__infor">
+                                        <div class="row">
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="product__more-sub">
+
+                                                    <div class="home__infor-icon">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </div>
+                                                    <div class="home__infor-heading">
+                                                        Thông tin website
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="product__more-sub">
+
+                                                    <div class="home__infor-icon">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </div>
+                                                    <div class="home__infor-heading">
+                                                        Điều khoản sử dụng
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="product__more-sub">
+
+                                                    <div class="home__infor-icon">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </div>
+                                                    <div class="home__infor-heading">
+                                                        Hotline
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col l-3 m-6 c-12">
+                                                <div class="product__more-sub">
+
+                                                    <div class="home__infor-icon">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </div>
+                                                    <div class="home__infor-heading">
+                                                        Liên hệ
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="grid wide">
+                    <div class="footer__content-disc">
+                        <div class="row">
+                            <div class="col l-6">
+                                <span class="footer__content-disc-text">
+                                    Copyright © 2021 The Coffee House. All rights reserved.
+                                </span>
+                            </div>
+                            <div class="col l-6">
+                                <img src="	https://order.thecoffeehouse.com/_nuxt/img/active.4cba64f.png" alt=""
+                                    class="footer__content-disc-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script>
+        const loGo = document.querySelector('.js-header-logo')
+        const notify = document.querySelector('.js-header-notify')
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        // Hàm hiển thị modal mua vé (thêm class open vào modal)
+
+        function showBuyTickets() {
+            notify.classList.add('open')
+        }
+
+        // Hàm ẩn modal mua vé (gỡ bỏ class open của modal)
+
+        function hideBuyTickets() {
+            notify.classList.remove('open')
+        }
+
+        loGo.addEventListener('click', showBuyTickets)
+
+        notify.addEventListener('click', hideBuyTickets)
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
+
+    </script>
+</body>
+
+</html>
